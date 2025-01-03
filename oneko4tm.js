@@ -4,7 +4,7 @@
 // @version      2024-04-30
 // @description  cat mouse folow (real)
 // @author       antihack3r
-// @match        */*
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
@@ -12,7 +12,7 @@
     'use strict';
 
     // CONFIGURATION START
-    const DO_SELF_SCRATCHES = true;
+    const DO_SELF_SCRATCHES = false;
     const RETURN_TO_MOUSE_ON_CLICK = true;
     const IMAGE = "https://maia.crimew.gay/img/maia_oneko.gif";
     // CONFIGURATION END
@@ -65,7 +65,7 @@
             nekoEl.style.left = `${nekoPosX}px`;
             nekoEl.style.top = `${nekoPosY}px`;
             nekoEl.style.top = `${nekoPosY}px`;
-            nekoEl.style.zIndex = Number.MAX_VALUE;
+            nekoEl.style.zIndex = "2147483647";
 
             document.body.appendChild(nekoEl);
 
